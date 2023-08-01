@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Add content using DOM</title>
+</head>
+<body>
+      <p id="main-text">ICE CREAM ICE CREAM ICE CREAM...</p>
+      <script>
+        let p = document.getElementById("main-text"); 
+        let response = window.confirm("YOU WILL BE DISAPPOINTED IF YOU HIT CANCEL")
+         if (response){ 
+          p.append("GOTCHA......no ice cream for you");
+         }else{
+            window.alert('NOT TODAY SATAN')
+            p.innerHTML = "You messed up A-A RON"
+         }
+         console.log(p.innerHTML);
+      </script>
+</body>
+</html>
